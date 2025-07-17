@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Farm - Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Smart Farm</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profile.html">프로필</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="profile-content">
+            <h2>User Profile</h2>
+            <div class="profile-info">
+                <p><strong>Full Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Farm Name:</strong> Green Acres Farm</p>
+                <p><strong>Location:</strong> Rural Town, USA</p>
+            </div>
+
+            <h3>Edit Profile</h3>
+            <form>
+                <div class="form-group">
+                    <label for="editFullName">Full Name:</label>
+                    <input type="text" id="editFullName" name="editFullName" value="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="editEmail">이메일 주소:</label>
+                    <input type="email" id="editEmail" name="editEmail" value="john.doe@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="editFarmName">농장 이름:</label>
+                    <input type="text" id="editFarmName" name="editFarmName" value="Green Acres Farm">
+                </div>
+                <div class="form-group">
+                    <label for="editLocation">위치:</label>
+                    <input type="text" id="editLocation" name="editLocation" value="Rural Town, USA">
+                </div>
+                <button type="submit">변경 사항 저장</button>
+            </form>
+
+            <h3>비밀번호 변경</h3>
+            <form>
+                <div class="form-group">
+                    <label for="currentPassword">현재 비밀번호:</label>
+                    <input type="password" id="currentPassword" name="currentPassword">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">새 비밀번호:</label>
+                    <input type="password" id="newPassword" name="newPassword">
+                </div>
+                <div class="form-group">
+                    <label for="confirmNewPassword">새 비밀번호 확인:</label>
+                    <input type="password" id="confirmNewPassword" name="confirmNewPassword">
+                </div>
+                <button type="submit">비밀번호 변경</button>
+            </form>
+
+            <h3>농장 설정</h3>
+            <p><em>(센서 임계값, 알림 기본 설정과 같은 농장별 설정에 대한 자리 표시자)</em></p>
+            <button onclick="location.href='dashboard.html'">대시보드로 이동</button>
+            <button onclick="location.href='login.html'">로그아웃</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 스마트팜. 모든 권리 보유.</p>
+        <div class="social-links">
+            <a href="#">페이스북</a>
+            <a href="#">트위터</a>
+            <a href="#">링크드인</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
